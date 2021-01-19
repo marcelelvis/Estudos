@@ -57,34 +57,56 @@ for i in range(3):
     geraMatriz(matriz)
     print(matriz)
 '''
-v = [1,2,3,4,5]
+#aula da UFF criar matriz
+'''
+m = int(input("Digite a linha da matriz: "))
+n = int(input("Digite número de colunas: "))
 
-def busca2(x):
-    i = 0
-    valor = 0
-    n = len(v)
-    v[n+1] = x
-    while v[i] != x:
-        i += 1
-        if i != n + 1:
-            valor = i
-    print(i)
-busca2(4)
+notas = []
+for i in range(m):
+    linha = []
+    for j in range(n):
+        msg = float(input(f"Digite a nota {j+1} do aluno {i+1}: "))
+        linha.append(msg)
+    notas.append(linha)
+for i in range(3):
+    print(notas[i])
+'''
+'''
+#Outro exemplo aula UFF
+matriz = []
 
+for i in range(3):
+    linha = []
+    for j in range(3):
+        msg = int(input(f"Número da célula [{i}][{j}]? "))
+        linha.append(msg)
+    matriz.append(linha)
+pares = 0
+for linha in matriz:
+    for e in linha:
+        if e % 2 == 0:
+            pares += 1
+for linha in matriz:
+    print(linha)
+print(f"A matriz contém {pares} números pares")
+'''
 
 '''
-def busca(x):
-    while x <= v[n]
-        n += 1
-        if x <= v[n]
-            i = 1
-            while v[i] < x:
-                i += 1
-                if v[i] != x
-                    busca() = 0
-                else:
-                    busca() = i
-        else:
-            busca() = 0
-busca(v)
+
+#UFF, matriz com pessoas nome e idade
+
+pessoas = []
+for i in range(3):
+    nome = input(f"Nome da pessoa {i+1}? ")
+    idade = int(input(f"Idade de {nome}? "))
+    pessoas.append([nome, idade])
+
+menor = 0
+for i in range(len(pessoas)):
+    if pessoas[i][1] < pessoas[menor][1]:
+        menor = i
+for pessoa in pessoas:
+    print(pessoa)
+print(f'A pessoa mais nova é {pessoas[menor][0]}') # O zero é p mostrar o nome da pessoa
 '''
