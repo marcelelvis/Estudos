@@ -110,3 +110,36 @@ for pessoa in pessoas:
     print(pessoa)
 print(f'A pessoa mais nova é {pessoas[menor][0]}') # O zero é p mostrar o nome da pessoa
 '''
+
+'''
+matriz = []
+
+for i in range(2): #3
+    turma = []
+    for k in range(3):
+        alunos = []
+        for j in range(5):#5
+            notas = list(range(5))
+            alunos.append(notas)
+        turma.append(alunos)
+    matriz.append(turma)
+for i in matriz:
+    print(i)
+'''
+'''
+lin = int(input("Informe o número de linhas da matriz: "))
+col = int(input("Informe o número de colunas da matriz: "))
+
+matriz = []
+
+for i in range(lin):
+    linha = []
+    for j in range(col):
+        elemento = int(input(f"Digite o elemento {i+1}{j+1} da matriz: "))
+        linha.append(elemento)
+    matriz.append(linha)
+
+for k in matriz:
+    print(k)
+'''
+
