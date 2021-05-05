@@ -20,3 +20,10 @@ for i in range(testes):
 
 print(f"É vantajoso trocar em {trocar*100/testes:.0f}% das vezes")
 print(f"Não é vantajoso trocarm em {n_trocar*100/testes:.0f}% das vezes")
+'''
+lista = [1,2,4,5,7]
+
+a = random.choice(lista)
+
+print(a)
+'''
